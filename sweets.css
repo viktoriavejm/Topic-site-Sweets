@@ -1,0 +1,159 @@
+@font-face {
+    font-family: suses;
+    src: url(./font/Sweety.ttf);
+}
+
+@font-face {
+    font-family: su;
+    src: url(./font/Sweet.ttf);
+}
+
+/* Allgemeines Styling */
+body {
+    color: #fff;
+    background: rgb(17,17,17);
+    background: linear-gradient(103deg, hsl(206, 100%, 2%) 0%, hsl(206, 100%, 7%) 100%);font-family: 'Roboto';
+    font-family: sans-serif;
+    margin: 0;
+}
+/* body { overflow-x: hidden; }
+body { opacity: 0; } */
+
+* {
+    box-sizing: border-box;
+}
+
+/* FullScreen Slides mit autozentriertem Inhalt */
+#section0 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #a98b52;
+    /* background: linear-gradient(90deg, rgba(175,168,154,1) 0%, rgba(131,111,45,1) 27%, rgba(96,73,15,1) 100%); */
+}
+section:nth-child(even) {
+    background: 	#9d794e;}
+
+section{
+    background: #b4a26d;
+    display: grid;
+
+    min-height: 100vh;
+}
+
+#section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9, #section10{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.536);
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 12px 30px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 12px 30px -6px rgba(0,0,0,0,75);
+    box-shadow: 10px 12px 30px -6px rgba(0,0,0,0,75);
+
+    margin: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+#section1 img, #section2 img, #section3 img, #section4 img, #section5 img, #section6 img, #section7 img, #section8 img, #section9 img, #section10 img{
+    width: 90%;
+}
+
+#text{
+    padding: 1%;
+    text-align: left;
+    padding-left: 7%;
+    margin-top: 17%;
+    letter-spacing: 3px;
+    font-size: 2em;
+    border-left: rgb(255, 255, 255);
+    border-width: 2px;
+    border-style: solid;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+}
+
+#head{
+    text-align: center;
+    font-size: 16em;
+
+    font-family: su;
+    letter-spacing: 7px;
+
+    border-bottom: rgb(234, 234, 234);
+    border-width: 5px;
+    border-style: solid;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+
+#piccc{
+    position: absolute;
+    top: 0;
+    left: 67%;
+    width: 20%;
+}
+
+#rechts{
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 20%;
+}
+
+#pic{
+    height: 100%;
+    width: 100%;
+}
+
+.onscroll_hidden {
+    transform: translateX(-20%) scale(0);
+    opacity: 0;
+    transition: opacity 3s, transform 0.5s;
+}
+
+/* CSS Class für Observer: visible Properties */
+.onscroll_visible {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+}
+
+#name{
+    color: #9d794e;
+}
+
+#filter{
+    position: absolute;
+    top: 10%;
+    width: 17%;
+    background: linear-gradient(to right, #9d7a4e91, #a98b5276, #b4a26d80);
+    padding: 1%;
+    border-radius: 0px 20px 20px 0px;
+
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-delay: 0s;
+}
+
+#filter:hover{
+    scale: 1.05;
+    background-color: white;
+    color: #9d794e;
+    /* -webkit-box-shadow: 10px 12px 30px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 12px 30px -6px rgba(0,0,0,0,75);
+    box-shadow: 10px 12px 30px -6px rgba(0,0,0,0,75); */
+}
+
+#filter:active{
+    scale: 0.989;
+}
+
+#button{
+    padding: 2%;
+}
+
